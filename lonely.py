@@ -1,10 +1,9 @@
 import streamlit as st
-import os
-from dotenv import load_dotenv
 from openai import OpenAI
 
-load_dotenv()
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+
+st.set_page_config(page_title="Mental Health Screening", layout="centered")
 
 # -----------------------
 # Language Content
@@ -132,7 +131,7 @@ with st.sidebar:
 c = content[lang]
 score_map = {c["options"][i]: i for i in range(4)}
 
-st.set_page_config(page_title=c["page_title"], layout="centered")
+#st.set_page_config(page_title=c["page_title"], layout="centered")
 st.title(c["title"])
 st.markdown(c["subtitle"])
 
