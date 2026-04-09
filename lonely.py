@@ -12,7 +12,7 @@ content = {
 
 "English": {
 
-"title":"🧠 Student Mental Health Assessment",
+"title":"🧠 Student Mental Health Assessment: KU KPS Infirmary",
 "options":["Not at all","Several days","More than half the days","Nearly every day"],
 
 "phq_header":"😔 Depression Screening (PHQ-9)",
@@ -46,7 +46,7 @@ content = {
 
 "ภาษาไทย":{
 
-"title":"🧠 แบบประเมินสุขภาพจิตนักศึกษา",
+"title":"🧠 แบบประเมินสุขภาพจิตนักศึกษา สถานศึกษา มหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตกำแพงแสน",
 "options":["ไม่มีเลย","บางวัน","บ่อยกว่าครึ่งเวลา","เกือบทุกวัน"],
 
 "phq_header":"😔 คัดกรองซึมเศร้า (PHQ-9)",
@@ -171,4 +171,4 @@ Use empathetic tone.
 # DISCLAIMER
 # --------------------------------
 st.markdown("---")
-st.caption("Screening tool only — not a clinical diagnosis.")
+st.caption("Screening tool only and your data will not be stored.")
